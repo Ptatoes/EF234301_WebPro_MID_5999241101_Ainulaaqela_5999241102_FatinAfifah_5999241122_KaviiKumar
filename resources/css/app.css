@@ -1,0 +1,1512 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)), 
+              url('https://laundry8plm.b-cdn.net/wp-content/uploads/2023/02/apa-itu-laundry.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  color: #2c3e50;
+}
+
+/* In resources/css/app.css */
+.home-page {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/55778c1ae4b0b8010075a043/1476227355920-B15RTDQQ18APGIZKI7K4/IMG_2668.jpg?format=2500w'); /* Adjust the path accordingly */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    min-height: 100vh; /* Ensure it takes at least the full viewport height */
+}
+
+/* In resources/css/app.css */
+.service-solution {
+    background-color: rgba(224, 213, 196, 0.8); /* White background with 80% opacity */
+    padding: 20px; /* Add some padding around the text */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+/* Navbar Styling */
+.customer-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #8c6a4a; /* Warm earthy brown */
+    padding: 15px;
+}
+
+header h1 {
+    color: #e4ca09; /* Light beige */
+    text-align: center;
+    font-size: 2em;
+}
+
+
+/* Main Section Styling */
+.page-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+    font-weight: bold;
+    color: #5b4f3b; /* Darker earth tone */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin: 40px 0;
+}
+
+section h2 {
+    color: #8c6a4a;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #3b3029;
+}
+
+
+
+.back-btn {
+    background-color: #a38262;
+    color: #fdfcf5;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1.1em;
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.back-btn:hover {
+    background-color: #b99674; /* Lighter brown on hover */
+}
+
+.btn1 {
+    padding: 10px 20px;
+    background-color: transparent; /* Remove background */
+    color: #fdfcf5; /* Light beige text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.1em; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: color 0.3s ease; /* Transition effect for color */
+    display: block; /* Block display */
+    width: fit-content; /* Fit to content */
+    margin: 20px auto; /* Center alignment */
+}
+
+.btn1:hover {
+    color: #b99674; /* Change text color on hover */
+}
+
+.back-home-btn {
+    background-color: #a38262;
+    color: #fdfcf5;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1.1em;
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    text-align: center;
+}
+
+select#status {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.back-home-btn:hover {
+    background-color: #b99674;
+}
+
+/* Table Styling */
+/* Container for the table */
+.table-container {
+  background-color: #ffffff; /* Cream background */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #1b1531; /* Soft border color to match cream theme */
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+  color: #2c3e50; /* Dark blue for text */
+}
+
+/* Header styling */
+th {
+  background-color: #2c3e50; /* Darker blue for headers */
+  color: #fdfcf5; /* Cream color for text */
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+  background-color: #ffffff; /* Light cream for even rows */
+}
+
+tr:hover {
+  background-color: #c0d6e4; /* Light blue on hover */
+}
+
+/* Hover effects for links and buttons */
+.text-blue-600:hover {
+  color: #004d99; /* Darker blue on hover for blue elements */
+}
+
+.text-red-600:hover {
+  color: #b30000; /* Dark red for hover effect on red elements */
+}
+
+/* Navbar background color */
+.navbar {
+  background-color: #2c3e50; /* Darker blue for the navbar */
+}
+
+/* Form Section */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #5b4f3b;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #d6c3a6; /* Muted beige */
+    background-color: #f9f5ec;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.modal-content h2 {
+    color: #3b3029;
+    margin-bottom: 20px;
+}
+
+.modal-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #004d99;
+    color: #fdfcf5;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.modal-buttons button:hover {
+    background-color: #9fc5df;
+}
+
+.cancel-btn {
+    background-color: #c54f4f;
+}
+
+.cancel-btn:hover {
+    background-color: #e06161;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50; /* Earthy brown */
+    color: #fdfcf5; /* Light beige */
+}
+
+.bg-laundry {
+    background-image: url('https://cdn.apartmenttherapy.info/image/upload/v1562684637/at/620x0/2/6e6b6a2b-07f4-4856-bc88-e7600d84a7fc.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px; /* Adding padding for better spacing */
+    text-align: center;
+}
+  .search-input {
+    background-color: #ffffff;
+    border: 1px solid #a1c5e2;
+    padding: 10px; /* Increased padding for height */
+    width: 100%;
+    border-radius: 6px 0 0 6px; /* Rounded corners on the left side */
+    height: 40px; /* Set a fixed height */
+    color: #000000; /* Set font color to black */
+}
+
+/*New Start*/
+
+/*Admin Dasboard Start*/
+.admin-dashboard body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, rgba(240, 248, 255, 0.9), rgba(240, 248, 255, 0.9)), 
+              url('https://laundry8plm.b-cdn.net/wp-content/uploads/2023/02/apa-itu-laundry.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  color: #2c3e50;
+}
+
+.admin-dashboard .navbar {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.admin-dashboard .navbar h1 {
+  margin: 0;
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+.admin-dashboard .navbar .logout-button {
+  color: #ffffff;
+  background-color: #a2dbea; /* Red background for logout */
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 10px; /* Margin for spacing */
+  display: inline-block; /* Inline block to allow margin */
+  transition: background-color 0.3s;
+}
+
+.admin-dashboard .navbar .logout-button:hover {
+  background-color: #a4cfda; /* Darker red on hover */
+}
+
+.admin-dashboard .container {
+  padding: 30px;
+  text-align: center;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.admin-dashboard .container h2 {
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #34495e;
+}
+
+.admin-dashboard .clock {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 25px 0;
+  color: #2c3e50;
+}
+
+.admin-dashboard .links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.admin-dashboard a {
+  color: #ffffff;
+  background-color: #3498db;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.admin-dashboard a:hover {
+  background-color: #2980b9;
+}
+
+.admin-dashboard p {
+  font-size: 1.2em;
+  color: #7f8c8d;
+}
+
+/*Admin Dashboard End*/
+
+/*Admin Profile Start*/
+.admin-profile body {
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  background-color: #f0f4f8; /* Light background for a modern look */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.admin-profile header {
+  background-color: #2c3e50; /* Dark blue */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.admin-profile main {
+  padding: 30px;
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #fff; /* White background for content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+}
+
+.admin-profile h2 {
+  margin: 0;
+  font-size: 28px; /* Larger font size */
+  color: #2c3e50; /* Dark blue */
+  border-bottom: 2px solid #3498db; /* Underline effect */
+  padding-bottom: 10px; /* Space below heading */
+}
+
+.admin-profile .info {
+  font-size: 18px;
+  margin: 10px 0;
+  line-height: 1.6; /* Increased line height */
+}
+
+.admin-profile .button-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.admin-profile .button {
+  background-color: #3498db; /* Blue */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Button shadow */
+}
+
+.admin-profile .button:hover {
+  background-color: #2980b9; /* Darker blue */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+.admin-profile footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px 0;
+  color: #7f8c8d; /* Gray */
+  font-size: 14px; /* Smaller font size */
+}
+
+@media (max-width: 600px) {
+  .admin-profile main {
+      padding: 20px; /* Less padding on small screens */
+  }
+
+  .admin-profile .button {
+      padding: 10px 20px; /* Less padding for buttons */
+      font-size: 16px; /* Smaller font size */
+  }
+
+  .admin-profile h2 {
+      font-size: 24px; /* Smaller heading on mobile */
+  }
+}
+
+/*Admin Profile End*/
+
+/*Admin-customers Index Table Start*/
+.admin-customers .section-container {
+  background-color: #ffffff;
+  background-opacity: 0.95;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-customers .header-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-customers .search-container {
+  display: flex;
+  width: 100%;
+}
+
+.admin-customers .search-input {
+  background-color: #ffffff;
+  border: 1px solid #a1c5e2;
+  padding: 10px; /* Increased padding for height */
+  width: 100%;
+  border-radius: 6px 0 0 6px; /* Rounded corners on the left side */
+  height: 40px; /* Set a fixed height */
+  box-sizing: border-box; /* Ensure padding doesn't affect total height */
+}
+
+.admin-customers .search-button {
+  background-color: #3498db;
+  padding: 10px 16px; /* Same height and adjusted padding */
+  font-size: 12px;
+  border-radius: 0 6px 6px 0; /* Rounded corners on the right side */
+  color: white;
+  height: 55px; /* Same height as search input */
+  display: flex; /* Align button text properly */
+  align-items: center; /* Center the text vertically */
+}
+
+
+.admin-customers .add-button-container {
+  margin-top: 16px; /* Adjust margin for spacing */
+}
+
+.admin-customers .add-button {
+  background-color: #2c3e50;
+  padding: 10px 16px; /* Adjust padding */
+  color: white;
+  border-radius: 20px; /* More rounded corners */
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.3s; /* Add transition for hover effect */
+}
+
+.admin-customers .add-button:hover {
+  background-color: #1a252f; /* Darker on hover */
+}
+
+.admin-customers .page-title {
+  font-size: 24px;
+  text-align: center;
+  color: #004d99;
+}
+
+.admin-customers .message-alert, 
+.admin-customers .no-results-alert {
+  text-align: center;
+  padding: 12px;
+  background-color: #f4f1ea;
+  color: #b30000;
+  border-radius: 6px;
+}
+
+/* Table styles */
+.admin-customers .customer-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.admin-customers .table-head {
+  background-color: #8c6a4a;
+}
+
+.admin-customers .table-header {
+  padding: 12px;
+  color: #fdfcf5;
+  text-align: center;
+}
+
+.admin-customers .table-row:nth-child(even) {
+  background-color: #eaeef4;
+}
+
+.admin-customers .table-row:hover {
+  background-color: #ddd;
+}
+
+.admin-customers .table-data {
+  padding: 12px;
+  color: #3b3029;
+  text-align: center;
+}
+
+.admin-customers .action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.admin-customers .edit-button, 
+.admin-customers .delete-button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: white;
+}
+
+.admin-customers .edit-button {
+  background-color: #3498db;
+}
+
+.admin-customers .delete-button {
+  background-color: #e74c3c;
+}
+
+/* Back to homepage button */
+.admin-customers .back-home-button {
+  color: #004d99;
+  font-weight: bold;
+}
+
+/*Admin-customers INdex Table End*/
+
+/*Admin customer Edit Start*/
+/* Specific styles for the admin customer edit page */
+
+/* General Page Title Styling */
+.page-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #004d99; /* Blue title */
+}
+
+/* Form Input Styling */
+label {
+  font-size: 16px;
+  color: #004d99;
+  margin-top: 10px;
+  display: block;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #a1c5e2;
+  background-color: #ffffff; /* Cream background */
+  color: #004d99; /* Blue text */
+}
+
+.back-btn {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  background-color: #1a252f;
+  color: white;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.modal-buttons button {
+  padding: 10px 16px;
+  margin: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Confirmation Modal Button */
+#confirmEditCustomerBtn {
+  background-color: #3498db; /* Blue */
+  color: white;
+}
+
+/* Cancel Modal Button */
+.cancel-btn {
+  background-color: #e74c3c; /* Red */
+  color: white;
+}
+
+/* Adjust Navbar Background Color */
+.navbar {
+  background-color: #2c3e50; /* Darker blue navbar */
+}
+
+/*Admin customer Edit End*/
+
+/*Admin customer Create Start*/
+/* General Page Title Styling */
+.page-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #004d99; /* Blue title */
+}
+
+/* Form Input Styling */
+label {
+  font-size: 16px;
+  color: #004d99;
+  margin-top: 10px;
+  display: block;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #a1c5e2;
+  background-color: #f4f1ea; /* Cream background */
+  color: #004d99; /* Blue text */
+}
+
+.back-btn {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  background-color: #1a252f;
+  color: white;
+}
+
+/* Error Message Styling */
+.error-messages {
+  background-color: #ffcccc;
+  color: #b30000;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.modal-buttons button {
+  padding: 10px 16px;
+  margin: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Confirmation Modal Button */
+#confirmCustomerBtn {
+  background-color: #3498db; /* Blue */
+  color: white;
+}
+
+/* Cancel Modal Button */
+.cancel-btn {
+  background-color: #e74c3c; /* Red */
+  color: white;
+}
+
+/* Adjust Navbar Background Color */
+.navbar {
+  background-color: #2c3e50; /* Darker blue navbar */
+}
+
+/*Admin customer Create End*/
+
+/*Admin Oder Create Start*/
+/* Specific styles for Admin Order Create page */
+
+/* General Page Title Styling */
+.page-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #004d99; /* Blue title */
+}
+
+/* Form Input Styling */
+label {
+  font-size: 16px;
+  color: #004d99;
+  margin-top: 10px;
+  display: block;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #a1c5e2;
+  background-color: #ffffff; /* Cream background */
+  color: #004d99; /* Blue text */
+}
+
+.back-btn {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  background-color: #1a252f;
+  color: white;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.modal-buttons button {
+  padding: 10px 16px;
+  margin: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Confirmation Modal Button */
+#confirmOrderBtn {
+  background-color: #3498db; /* Blue */
+  color: white;
+}
+
+/* Cancel Modal Button */
+.cancel-btn {
+  background-color: #e74c3c; /* Red */
+  color: white;
+}
+
+.modal-buttons button:hover {
+  opacity: 0.8;
+}
+
+/*Admin Order Create ENd*/
+
+/*Admin Order Edit Start*/
+/* Specific styles for Admin Customer Edit page */
+
+/* General Page Title Styling */
+.page-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #004d99; /* Blue title */
+}
+
+/* Form Input Styling */
+label {
+  font-size: 16px;
+  color: #004d99;
+  margin-top: 10px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #a1c5e2;
+  background-color: #ffffff; /* Cream background */
+  color: #004d99; /* Blue text */
+}
+
+.back-btn {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  background-color: #1a252f;
+  color: white;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.modal-buttons button {
+  padding: 10px 16px;
+  margin: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Confirmation Modal Button */
+#confirmEditCustomerBtn {
+  background-color: #3498db; /* Blue */
+  color: white;
+}
+
+/* Cancel Modal Button */
+.cancel-btn {
+  background-color: #e74c3c; /* Red */
+  color: white;
+}
+
+.modal-buttons button:hover {
+  opacity: 0.8;
+}
+
+/*Admin Order Edit End*/
+
+/*Admin Order Index Start*/
+/* Admin Order Index Styles */
+.admin-order-index .section-container {
+  background-color: #ffffff;
+  background-opacity: 0.95;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-order-index .header-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-order-index .search-container {
+  display: flex;
+  width: 100%;
+}
+
+.admin-order-index .search-input {
+  background-color: #ffffff;
+  border: 1px solid #a1c5e2;
+  padding: 10px; /* Increased padding for height */
+  width: 100%;
+  border-radius: 6px 0 0 6px; /* Rounded corners on the left side */
+  height: 40px; /* Set a fixed height */
+}
+
+.admin-order-index .search-button {
+  background-color: #3498db;
+  padding: 10px 16px; /* Same height and adjusted padding */
+  font-size: 12px;
+  border-radius: 0 6px 6px 0; /* Rounded corners on the right side */
+  color: white;
+  height: 55px; /* Same height as search input */
+}
+
+.admin-order-index .add-button-container {
+  margin-top: 16px; /* Adjust margin for spacing */
+}
+
+.admin-order-index .add-button {
+  background-color: #2c3e50;
+  padding: 10px 16px; /* Adjust padding */
+  color: white;
+  border-radius: 20px; /* More rounded corners */
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.3s; /* Add transition for hover effect */
+}
+
+.admin-order-index .add-button:hover {
+  background-color: #1a252f; /* Darker on hover */
+}
+
+.admin-order-index .page-title {
+  font-size: 24px;
+  text-align: center;
+  color: #004d99;
+}
+
+.admin-order-index .message-alert, 
+.admin-order-index .no-results-alert {
+  text-align: center;
+  padding: 12px;
+  background-color: #f4f1ea;
+  color: #b30000;
+  border-radius: 6px;
+}
+
+/* Table styles */
+.admin-order-index .customer-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.admin-order-index .table-head {
+  background-color: #8c6a4a;
+}
+
+.admin-order-index .table-header {
+  padding: 12px;
+  color: #fdfcf5;
+  text-align: center;
+}
+
+.admin-order-index .table-row:nth-child(even) {
+  background-color: #eaeef4;
+}
+
+.admin-order-index .table-row:hover {
+  background-color: #ddd;
+}
+
+.admin-order-index .table-data {
+  padding: 12px;
+  color: #3b3029;
+  text-align: center;
+}
+
+.admin-order-index .table-actions {
+  text-align: center; /* Center actions */
+}
+
+.admin-order-index .action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.admin-order-index .edit-button, 
+.admin-order-index .delete-button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: white;
+}
+
+.admin-order-index .edit-button {
+  background-color: #3498db;
+}
+
+.admin-order-index .delete-button {
+  background-color: #e74c3c;
+}
+
+/* Back to homepage button */
+.admin-order-index .back-home-button {
+  color: #004d99;
+  font-weight: bold;
+}
+
+/*Admin Order Index End*/
+
+/*Service create Start*/
+/* Admin Service Create Page Styles */
+.admin-service-create .page-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #004d99; /* Blue title */
+}
+
+.admin-service-create label {
+  font-size: 16px;
+  color: #004d99;
+  margin-top: 10px;
+  display: block;
+}
+
+.admin-service-create input[type="text"], 
+.admin-service-create input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #a1c5e2;
+  background-color: #f4f1ea; /* Cream background */
+  color: #004d99; /* Blue text */
+}
+
+.admin-service-create .back-btn {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.admin-service-create .back-btn:hover {
+  background-color: #1a252f;
+  color: white;
+}
+
+/* Modal Styling */
+.admin-service-create .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-service-create .modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.admin-service-create .modal-buttons button {
+  padding: 10px 16px;
+  margin: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Confirmation Modal Button */
+.admin-service-create #confirmServiceBtn {
+  background-color: #3498db; /* Blue */
+  color: white;
+}
+
+/* Cancel Modal Button */
+.admin-service-create .cancel-btn {
+  background-color: #e74c3c; /* Red */
+  color: white;
+}
+
+/* Adjust Navbar Background Color */
+.admin-service-create .navbar {
+  background-color: #2c3e50; /* Darker blue navbar */
+}
+
+/*Service create End*/
+
+/*Service edit Start*/
+/* Service Edit Page Specific Styling */
+.service-edit-page .page-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #004d99; /* Blue title */
+}
+
+.service-edit-page label {
+  font-size: 16px;
+  color: #004d99;
+  margin-top: 10px;
+  display: block;
+}
+
+.service-edit-page input[type="text"], .service-edit-page input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border-radius: 8px;
+  border: 1px solid #a1c5e2;
+  background-color: #f4f1ea; /* Cream background */
+  color: #004d99; /* Blue text */
+}
+
+.service-edit-page .back-btn {
+  background-color: #2c3e50;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.service-edit-page .back-btn:hover {
+  background-color: #1a252f;
+  color: white;
+}
+
+.service-edit-page .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.service-edit-page .modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.service-edit-page .modal-buttons button {
+  padding: 10px 16px;
+  margin: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.service-edit-page #confirmEditServiceBtn {
+  background-color: #3498db; /* Blue */
+  color: white;
+}
+
+.service-edit-page .cancel-btn {
+  background-color: #e74c3c; /* Red */
+  color: white;
+}
+
+.service-edit-page .navbar {
+  background-color: #2c3e50; /* Darker blue navbar */
+}
+
+/*Service edit End*/
+
+/* Admin Service Index Start */
+.section-container {
+  background-color: #ffffff;
+  background-opacity: 0.95;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.search-container {
+  display: flex;
+  width: 100%;
+}
+
+.search-input {
+  background-color: #ffffff;
+  border: 1px solid #a1c5e2;
+  padding: 10px; /* Increased padding for height */
+  width: 100%;
+  border-radius: 6px 0 0 6px; /* Rounded corners on the left side */
+  height: 40px; /* Set a fixed height */
+}
+
+.search-button {
+  background-color: #3498db;
+  padding: 10px 16px; /* Same height and adjusted padding */
+  font-size: 12px;
+  border-radius: 0 6px 6px 0; /* Rounded corners on the right side */
+  color: rgb(255, 255, 255);
+  height: 55px; /* Same height as search input */
+}
+
+.add-button-container {
+  margin-top: 16px; /* Adjust margin for spacing */
+}
+
+.add-button {
+  background-color: #2c3e50;
+  padding: 10px 16px; /* Adjust padding */
+  color: white;
+  border-radius: 20px; /* More rounded corners */
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.3s; /* Add transition for hover effect */
+}
+
+.add-button:hover {
+  background-color: #1a252f; /* Darker on hover */
+}
+
+.page-title {
+  font-size: 24px;
+  text-align: center;
+  color: #004d99;
+}
+
+.message-alert, .no-results-alert {
+  text-align: center;
+  padding: 12px;
+  background-color: #f4f1ea;
+  color: #b30000;
+  border-radius: 6px;
+}
+
+/* Table styles */
+.service-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.table-head {
+  background-color: #8c6a4a;
+}
+
+.table-header {
+  padding: 12px;
+  color: #fdfcf5;
+  text-align: center;
+}
+
+.table-row:nth-child(even) {
+  background-color: #eaeef4;
+}
+
+.table-row:hover {
+  background-color: #ddd;
+}
+
+.table-data {
+  padding: 12px;
+  color: #3b3029;
+  text-align: center;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-button, .delete-button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: white;
+}
+
+.edit-button {
+  background-color: #3498db;
+}
+
+.delete-button {
+  background-color: #e74c3c;
+}
+
+/* Back to homepage button */
+.back-home-button {
+  color: #004d99;
+  font-weight: bold;
+}
+/* Admin Service Index End */
+
+.why-choose-us-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.why-choose-us-container {
+  position: relative;
+  width: 500px; /* Increased width */
+  height: 500px; /* Increased height */
+  margin: 0 auto;
+}
+
+.center-icon {
+  width: 120px; /* Increased size of center icon */
+  height: 120px; /* Increased size of center icon */
+  background-color: #5B3A29;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.center-icon img {
+  width: 70px; /* Adjusted size of the icon inside */
+  height: 70px; /* Adjusted size of the icon inside */
+}
+
+.reason {
+  width: 130px; /* Increased size of reason circles */
+  height: 130px; /* Increased size of reason circles */
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.reason:hover {
+  transform: scale(1.1);
+}
+
+.reason span {
+  font-size: 35px; /* Increased size of the reason icons */
+}
+
+.reason p {
+  font-size: 14px; /* Adjusted font size for descriptions */
+  margin: 0;
+  color: #333;
+  text-align: center;
+}
+
+/* Positioning each reason around the center */
+.reason-1 { top: 0; left: 50%; transform: translateX(-50%); }
+.reason-2 { top: 35%; left: 5%; transform: translateY(-50%); }
+.reason-3 { top: 35%; right: 5%; transform: translateY(-50%); }
+.reason-4 { bottom: 35%; left: 5%; transform: translateY(50%); }
+.reason-5 { bottom: 35%; right: 5%; transform: translateY(50%); }
+.reason-6 { bottom: 0; left: 50%; transform: translateX(-50%); }
